@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hook/useAuth';
+import bongologo from '../../../image/bongologo.png';
+import './Header.css';
 
 
 const Header = () => {
@@ -18,10 +20,10 @@ const Header = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/">Bongo Tour</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"><img classNmae="w-75" src={bongologo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto">
+                        <Nav className="ms-auto nav-style">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/manageUser">Manage Order</Nav.Link>
                             <Nav.Link as={Link} to="/userOrder">My Order</Nav.Link>
@@ -31,7 +33,7 @@ const Header = () => {
 
                                 <Nav.Link as={Link} to="/login">Login</Nav.Link> :
                                 <div>
-                                    <span>{user?.displayName}</span> <button onClick={handleLogout}>Logout</button></div>
+                                    <span className="user-name">{user?.displayName}</span> <button  className="button" onClick={handleLogout}>Logout</button></div>
 
                             }
 

@@ -2,6 +2,12 @@
     padding: 5px;
     border-radius: 5px;
     margin: 3px;
+    border: 1px solid lightcoral;
+}
+
+.title{
+    font-size: 2.7rem;
+    color: coral;
 }
 
 .tour-card-img img{
@@ -9,7 +15,7 @@
 }
 
 .tour-card-info{
-    background-color: palegreen;
+    
     padding: 10px;
 }
 
@@ -22,22 +28,11 @@
 .tour-card-dec{
     font-size: 1.1rem;
     text-align: justify;
+    color: gray;
 }
 
 .tour-card-btn{
-    text-align: center;
-    padding: 10px, 20px;
-    border: 2px solid rgb(8, 86, 150);
-    color: rgb(8, 86, 150);
-    font-weight: 600px;
-    font-size: 1.4rem;
-    border-radius: 10px;
+    cursor: pointer;
 }
 
-.tour-card-btn:hover{
-    cursor: pointer;
-    background-color: rgb(8, 86, 150);
-    color: oldlace;
-    border: none;
-    transition: 1s;
-}
+

@@ -17,7 +17,7 @@ const Guid = () => {
 
     return (
         <div>
-            <h1 className="text-center ">Our Guid</h1>
+            <h1 className="text-center py-5 title ">Our Guid</h1>
             <Container>
                 <Row className="g-1">
                     {

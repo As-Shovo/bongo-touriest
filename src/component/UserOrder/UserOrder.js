@@ -41,10 +41,20 @@ const UserOrder = () => {
 
     return (
         <div>
-            <h1>user orders</h1>
+            <Container>
+                <h1 className="text-center title">My orders</h1>
+                <div className="user">
+                    <div class="card" style={{width: "18rem"}}>
+                        <img class="card-img-top" src={user?.photoURL} alt="..." />
+                        <h3 class ="card-title">Name: {user?.displayName}</h3>
+                        <h5 class ="card-text">Email: <small>{user?.email}</small> </h5>
+                        
+                    </div>
+                </div>
+            </Container>
             <Container>
                 <div className="user-order">
-                    <Table striped bordered hover size="sm">
+                    <Table striped bordered hover responsive size="sm">
                         <thead>
                             <tr>
                                 <th>NO</th>

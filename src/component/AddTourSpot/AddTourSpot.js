@@ -31,8 +31,8 @@ const AddTourSpot = () => {
 
 
     return (
-        <div>
-            <h1 className="text-center">ADD TOUR SPOT</h1>
+        <div className="add-tour">
+            <h1 className="text-center title">ADD TOUR SPOT</h1>
             <Container className="form-body">
                 <form onSubmit={handleSubmit(onSubmit)} className="addTourSpot-form">
                     <input required placeholder="Name" {...register("name", { required: true, maxLength: 20 })} />

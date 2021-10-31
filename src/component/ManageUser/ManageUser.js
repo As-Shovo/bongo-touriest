@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ManageUser = () => {
 
@@ -37,10 +38,14 @@ const ManageUser = () => {
 
     return (
         <div>
-            <h1>Manage User</h1>
+            <h1 className="text-center title my-3 ">Manage User</h1>
+            <div className="manage-btn text-center my-3">
+                <Link to="/addTourSpot"><button className="button">Add A Tour Spot</button></Link>
+                <Link to="/user"><button className="button">User</button></Link>
+            </div>
             <Container>
                 <div className="user-order">
-                    <Table striped bordered hover size="sm">
+                    <Table striped bordered hover responsive size="sm">
                         <thead>
                             <tr>
                                 <th>NO</th>

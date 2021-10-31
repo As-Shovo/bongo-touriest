@@ -11,6 +11,7 @@ const Home = () => {
                     <div className="info-hero text-center">
                         <h2>-Time To Travel-</h2>
                         <p>Travel is the only thing you buy that makes you richer</p>
+                        <button className="button">Click More</button>
                     </div>
             </div>
 

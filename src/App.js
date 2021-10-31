@@ -44,9 +44,9 @@ function App() {
           <PrivateRoute path='/addTourSpot'>
             <AddTourSpot></AddTourSpot>
           </PrivateRoute>
-          <Route path='/user'>
+          <PrivateRoute path='/user'>
             <User></User>
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
             <NotFound></NotFound>
           </Route>

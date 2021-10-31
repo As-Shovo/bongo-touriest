@@ -1,0 +1,10 @@
+.user-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

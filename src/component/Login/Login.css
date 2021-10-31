@@ -1,0 +1,19 @@
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login p{
+    font-size: 2.5rem;
+    
+}
+
+.google-btn{
+    border: 1px solid coral;;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}

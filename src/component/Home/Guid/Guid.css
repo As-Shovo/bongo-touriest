@@ -1,6 +1,6 @@
 .guid-card{
     text-align: center;
-    border: 1px solid lightblue;
+    border: 1px solid lightcoral;
 }
 
 .guid-img img{
@@ -9,5 +9,6 @@
 
 .guid-info p{
     font-size: 2.3rem;
+    color: gray;
 
 }

@@ -1,3 +1,8 @@
 .gallary-img img{
     width: 100%;
 }
+
+.sub-title{
+    font-size: 1.1rem;
+    color: gray;
+}
