@@ -72,7 +72,7 @@ const UserOrder = () => {
                                     <td>{mu?.name}</td>
                                     <td>{mu?.email}</td>
                                     <td>{mu?.destination}</td>
-                                    <td>Processed</td>
+                                    <td>{mu?.status === "pending"?<button className="btn btn-warning">Pending</button>:<button className="btn btn-success">Aproved</button>}</td>
                                     <td><button onClick={() => handleDelete(mu._id)} className="btn btn-danger">Cencel</button></td>
                                 </tr>)
                             }

@@ -23,6 +23,7 @@ const UserOrder = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data =>{
+        data.status = 'pending';
          console.log(data)
          setSpiner(true)
          fetch('https://glacial-harbor-41487.herokuapp.com/tourManage',{

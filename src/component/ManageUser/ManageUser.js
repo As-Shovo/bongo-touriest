@@ -35,6 +35,33 @@ const ManageUser = () => {
             })
     }
     
+    const update = {
+        status: 'success'
+    }
+    
+
+    const handleUserUpdate = (id) =>{
+        const url = `https://glacial-harbor-41487.herokuapp.com/tourManage/${id}`;
+       
+        
+        fetch(url,{
+            method: "PUT",
+            headers:{
+                "content-type":"application/json"
+            },
+            body: JSON.stringify(update)
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result);
+            if(result.acknowledged){
+                alert('Success Fully Update Data')
+            }
+        })
+    }
+
+
+
 
     return (
         <div>
@@ -63,7 +90,7 @@ const ManageUser = () => {
                                     <td>{mu?.name}</td>
                                     <td>{mu?.email}</td>
                                     <td>{mu?.destination}</td>
-                                    <td>Processed</td>
+                                    <td><button className="btn btn-primary" onClick={()=>handleUserUpdate(mu._id)}>Update</button></td>
                                     <td><button onClick={() => handleDelete(mu._id)} className="btn btn-danger">Cencel</button></td>
                                 </tr>)
                             }

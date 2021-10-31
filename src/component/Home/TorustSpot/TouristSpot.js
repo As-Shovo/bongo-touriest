@@ -5,8 +5,8 @@ import './TouristSpot.css';
 
 const TouristSpot = () => {
 
-    const [spiner, setSpiner] = useState(true)
-    const history = useHistory()
+    const [spiner, setSpiner] = useState(true);
+    const history = useHistory();
 
     const [touristSpots, setTouristSpots] = useState([]);
 
