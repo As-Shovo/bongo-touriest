@@ -1,0 +1,21 @@
+.form-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.addTourSpot-form{
+    border: 1px solid lightblue;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.addTourSpot-form input{
+    max-width: 350px;
+    display: block;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid rgb(12, 89, 114);
+    margin: 10px 0;
+}

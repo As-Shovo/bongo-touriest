@@ -1,0 +1,13 @@
+.guid-card{
+    text-align: center;
+    border: 1px solid lightblue;
+}
+
+.guid-img img{
+    width: 100%;
+}
+
+.guid-info p{
+    font-size: 2.3rem;
+
+}
